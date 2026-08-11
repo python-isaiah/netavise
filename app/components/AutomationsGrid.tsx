@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 
 const automations = [
   {
@@ -78,13 +79,24 @@ export default function AutomationsGrid() {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             The Toolkit
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg mb-6">
             Built once, deployed perfectly every time.
           </p>
+
+          {/* Swipe indicator hint with arrow for mobile/tablet users */}
+          <div className="inline-flex lg:hidden items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium animate-pulse">
+            <span>Swipe to explore toolkit</span>
+            <motion.div
+              animate={{ x: [0, 5, 0] }}
+              transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
+            >
+              <ChevronRight size={14} />
+            </motion.div>
+          </div>
         </div>
       </div>
 
-      {/* SCROLLABLE CONTAINER: Horizontal scroll on mobile/tablet, multi-column wrap on large screens if desired */}
+      {/* SCROLLABLE CONTAINER: Horizontal scroll on mobile/tablet, multi-column wrap on large screens */}
       <div className="w-full overflow-x-auto scrollbar-none px-6 pb-6 pt-2">
         <div className="flex lg:grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto w-max lg:w-full">
           {automations.map((item, index) => {
