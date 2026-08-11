@@ -36,7 +36,65 @@ const demoFeatures = [
     color: "from-blue-400 to-indigo-500",
     icon: "📊",
   },
-
+  {
+    id: "menu-sync",
+    title: "Instant Menu Sync Engine",
+    description:
+      "Instantly push inventory updates, price changes, or flash items across QR codes and mobile storefronts in real-time.",
+    status: "Live",
+    href: "/menu-sync",
+    color: "from-teal-400 to-blue-500",
+    icon: "📋",
+  },
+  {
+    id: "voice-agent",
+    title: "AI Voice Receptionist & Booking",
+    description:
+      "Never miss a missed call. AI answers inbound calls 24/7, answers customer questions, and books tables instantly.",
+    status: "Live",
+    href: "/voice-agent",
+    color: "from-emerald-400 to-teal-500",
+    icon: "📞",
+  },
+  {
+    id: "seo-autopilot",
+    title: "AI Local SEO & Social Autopilot",
+    description:
+      "Dominate local search results. Auto-generate geo-targeted content and broadcast to Google Business & socials instantly.",
+    status: "Live",
+    href: "/seo-autopilot",
+    color: "from-blue-400 to-indigo-500",
+    icon: "🌐",
+  },
+  {
+    id: "web-revamp",
+    title: "Instant Website Revamp & Conversion Engine",
+    description:
+      "Turn sluggish legacy sites into blazing-fast, mobile-optimized conversion machines with instant ordering and booking flows.",
+    status: "Live",
+    href: "/web-revamp",
+    color: "from-amber-400 to-orange-500",
+    icon: "💻",
+  },
+  {
+    id: "yield-optimizer",
+    title: "AI Dynamic Pricing & Happy Hour Optimizer",
+    description:
+      "Fill empty tables during slow hours. Detect off-peak traffic lulls and auto-broadcast flash discounts to local subscribers.",
+    status: "Live",
+    href: "/yield-optimizer",
+    color: "from-cyan-400 to-blue-500",
+    icon: "📈",
+  },
+  {
+  id: 'competitor-intel',
+  title: 'AI Competitor Price & Offer Intel Radar',
+  description: 'Monitor rival pricing shifts, social ad spending, and local promotions in real-time with autonomous AI counter-strategies.',
+  status: 'Live',
+  href: '/competitor-intel',
+  color: 'from-orange-400 to-amber-500',
+  icon: '🕵️‍♂️',
+}
 ];
 
 export default function DemoHubPage() {
